@@ -165,3 +165,7 @@ i{
     color: black;
     font-size: 30px;
 }
+
+i:hover{
+    color: #f99204;
+}
