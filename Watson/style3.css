@@ -62,10 +62,6 @@ header {
     padding: 0;
 }
 
-.head__nav ul:first-child {
-    color: #f99303;
-
-}
 
 .head__nav li {
     display: inline-block;
@@ -84,8 +80,9 @@ header {
     color: #575757;
 }
 
-.head__nav a:hover {
-    color: #f99303;
+.head__nav .active,
+.head__nav li a:hover {
+  color: orange;
 }
 
 /* *******main__top******* */
@@ -124,7 +121,7 @@ p {
     /* font-weight: lighter; */
     font-size: 30px;
 }
-.main__intro p {
+.main__intro__p {
     font-size: 16px;
 }
 
@@ -146,13 +143,10 @@ p {
     background-image: linear-gradient(#ffce84 50%, #ffb042 50%);
 }
 
-.main__p{
-    padding: 0 0 0 55px;
-    font-size: 0;
+.main__p {
+    padding-left: 60px;
+    font-size: 13px;
 }
-.main__p p {
-}
-
 
 
 .main__img {
