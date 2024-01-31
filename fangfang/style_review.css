@@ -1,0 +1,88 @@
+* {
+  /* outline: 1px solid red; */
+  font-family: "Open Sans", Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*header*/
+header{
+  background-color: #EDEDED;
+  font-size: 0; /*處理header區inline-block縫隙*/
+}
+.header-container{
+  width: 920px; /*因為是block所以滿版,設定寬度才能看到*/
+  margin: 0 auto;
+  outline:1px solid #000;
+}
+
+.logo {
+  outline:1px solid #faa;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* .logo_link{
+
+}
+
+.logo_pic{
+
+} */
+
+.logo_name{
+  font-size: 16px;
+  color: #000 ;
+  font-weight: 400;
+}
+/*nav*/
+.menu{
+  outline:1px solid #aaf;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 50px;
+}
+/*ul*/
+.menu_list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/*li*/
+.menu_item{
+  outline:1px solid #aaf;
+  display: inline-block;
+}
+.menu_item + .menu_item{
+  margin: 0 0 0 40px;
+}
+/*a*/
+.menu_link{
+  display: inline-block;
+  font-size: 18px;
+  color: #808080;
+  padding: 20px 30px;
+  
+}
+.menu_link:hover{
+  color: #F99407 ;
+}
+
+/*main*/
