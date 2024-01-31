@@ -1,197 +1,175 @@
-* {
-    outline: 1px solid red;
-}
-
-body{
-    margin: 0;
-}
-
-.container{
+.container {
     width: 980px;
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: #eeeeee;
 }
 
-.logo{
+.header {
+    padding: 32px 0;
+}
+
+.header__logo {
     display: inline-block;
+    text-align: center;
     font-size: 0;
-    text-align: center;
     vertical-align: middle;
-    width: 150px;
 }
 
-.logo p{
-    margin: 0;
+header img {
+    width: auto;
 }
 
-a{
-    text-decoration: none;
-}
-
-.header{
-    padding: 20px 0;    
-}
-
-.header__logo{
-    display: block;
-    text-align: center;
-}
-
-.header__logo__name{
+.header__logo__text {
     font-size: 16px;
+}
+
+.header__logo a {
     color: black;
 }
 
-nav{
+nav {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 52px;
 }
 
-nav ul{
-    display: block;
-    width: 700px;
-    margin: 0;
-    padding: 0;
-    text-align-last: justify;
-}
-
-nav a{
-    color: #939393;
-}
-
-nav a:hover{
-    color: #f99204;
-}
-
-nav li{
+ul,
+li {
     display: inline-block;
-    padding: 20px 0;
 }
 
-nav a{
+nav li + li {
+    margin-left: 80px;
+}
+
+nav a {
     font-size: 16px;
+    color: #717171;
+    display: inline-block;
     padding: 20px;
 }
 
-.main{
-    margin: 60px auto 200px;
+.main {
+    margin-top: 70px;
+    margin-bottom: 200px;
 }
 
-.block{
-    width: 390px;
-    display: inline-block;
+.nav__home {
+    color: #fa8700;
 }
 
-.block--top--left h1{
-    font-size: 3em;
-    margin: 0;
-}
-.block--top--left h2{
-    font-size: 1.5em;
-    margin: 0;
+nav a:hover {
+    color: #fa8700;
 }
 
-.block--top--left p{
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-section{
-    padding: 0 80px 150px 80px;
-}
-
-.section-img{    
-    float: right;
-    width: 390px;
-    height: 362px;
-    object-fit: contain;
-    margin-left: 40px;
-}
-.try-it-button{
-    width: 200px;
-    margin: auto;
-}
-
-button{
-    width: 200px;
-    height: 50px;
-    background-image: linear-gradient(#ffba54 50%, #f99204 50%);
-    border: none;
-    border-radius: 7px;
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-}
-
-.try-it-button__descript{
-    font-size: 10px;
-}
-
-.block--bottom--right{
-    float: right;
-}
-
-.clearfix{
-    display: inline-block;
-}
-/* .clearfix::after{
-    display: block;
-    content: "";
-    clear: both;
-} */
-
-.article-title{
-    margin: 0 60px;
-}
-
-.article-title h2{
-    margin: 0;
-}
-.article-content p{
-    display: inline-block;
-    margin: 0 10px 30px 0;
-}
-
-
-.article-content{
-    columns: 2;
-    column-gap: 20px;
-    margin: 20px 60px;
-}
-
-footer{
-    background-color: #eeeeee;
-}
-
-.footer{
+section {
+    padding: 0 60px 130px 60px;
     text-align-last: justify;
-    padding: 40px 0;
-}
-.copyright{
-    display: inline-block;
-}
-
-.footer__icon{
-    display: inline-block;
     font-size: 0;
 }
 
-.footer__icon a{
-    margin-left: 20px;
+.main__block {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main__ideas-block h1 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+.main__ideas-block h2 {
+    font-size: 33px;
+}
+
+.main__ideas-block p {
+    font-size: 18px;
+}
+
+.main__ideas-block {
+    text-align-last: left;
+}
+
+.try-it {
+    margin: 0 auto;
+    width: 235px;
+    margin-top: 26px;
+}
+
+.try-it-button {
+    display: block;
+    width: 235px;
+    height: 65px;
+    font-size: 25px;
+    color: white;
+    background-image: linear-gradient(#ffba54 50%, #f99204 50%);
+    border-radius: 7px;
+    text-align-last: center;
+    line-height: 65px;
+    border: none;
+}
+
+.try-it p {
+    font-size: 14px;
+}
+
+.main__img {
+    display: inline-block;
+    width: 390px;
+    height: 390px;
+}
+
+article {
+    padding: 0 40px;
+}
+
+.article__title {
+    font-size: 21.5px;
+}
+
+.article__content {
+    text-align: justify;
+    text-align-last: justify;
+    margin-top: 28px;
+}
+
+.article__content p {
+    display: inline-block;
+    font-size: 18px;
+    width: 430px;
+    margin: 0 0 38px 0;
+    text-align: left;
+    text-align-last: left;
+}
+
+footer {
+    background-color: #eeeeee;
+    font-size: 0;
+    text-align-last: justify;
+}
+
+.footer__copyright {
+    display: inline-block;
+    margin: 48px 18px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.footer__icon {
+    display: inline-block;
+    margin-right: 45px;
+    vertical-align: middle;
+}
+
+.footer__icon a {
     display: inline-block;
 }
 
-i{
+i {
     color: black;
-    display: inline-block;
-    font-size: 30px;
+    font-size: 33px;
+    margin-left: 25px;
 }
-
-i:hover {
-    color: #f99204;
-}
-
-
