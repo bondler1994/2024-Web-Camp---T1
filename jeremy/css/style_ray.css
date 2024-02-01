@@ -1,0 +1,180 @@
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #eeeeee;
+    padding: 32px 0;
+}
+
+.header__logo {
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+header img {
+    width: auto;
+}
+
+.header__logo__text {
+    font-size: 16px;
+}
+
+.header__logo a {
+    color: black;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 64px;
+}
+
+ul,
+li {
+    display: inline-block;
+}
+
+nav li + li {
+    margin-left: 80px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #717171;
+    display: inline-block;
+    padding: 20px;
+}
+
+main {
+    padding: 66px 0 210px 0;
+}
+
+.nav__home {
+    color: #fa8700;
+}
+
+nav a:hover {
+    color: #fa8700;
+}
+
+.ideas-box {
+    margin: 0 60px 120px 60px;
+    font-size: 0;
+}
+
+.ideas-text {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ideas-text h2 {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.ideas-text h3 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.ideas-text p {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.try-it {
+    margin: 0 auto;
+    width: 235px;
+    margin-top: 26px;
+}
+
+.try-it-button {
+    display: block;
+    width: 235px;
+    height: 65px;
+    font-size: 25px;
+    color: white;
+    background-image: linear-gradient(#ffba54 50%, #f99204 50%);
+    border-radius: 7px;
+    text-align-last: center;
+    line-height: 65px;
+    border: none;
+}
+
+.try-it p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.main__img {
+    display: inline-block;
+    width: 390px;
+    height: 390px;
+    position: relative;
+    left: 70px;
+}
+
+article {
+    padding: 0 40px;
+}
+
+.article__title {
+    font-size: 30px;
+}
+
+.article__content {
+    margin-top: 28px;
+}
+
+.article__content p {
+    display: inline-block;
+    font-size: 17.5px;
+    line-height: 1.5;
+    width: 418px;
+}
+
+.article__content p + p {
+    margin-left: 35px;
+}
+
+br + p {
+    margin-top: 29px;
+}
+
+footer {
+    background-color: #eeeeee;
+    font-size: 0;
+    text-align-last: justify;
+}
+
+.footer__copyright {
+    display: inline-block;
+    margin: 40px 18px 20px;
+    /* vertical-align: middle; */
+    font-size: 13px;
+}
+
+.footer__icon {
+    display: inline-block;
+    margin-right: 45px;
+    position: relative;
+    top: 5px;
+}
+
+.footer__icon a {
+    display: inline-block;
+}
+
+.footer__icon a + a {
+    margin-left: 24px;
+}
+
+i {
+    color: black;
+    font-size: 33px;
+}
