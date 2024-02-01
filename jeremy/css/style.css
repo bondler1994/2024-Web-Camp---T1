@@ -51,7 +51,7 @@ nav a {
     padding: 20px;
 }
 
-.main {
+main {
     margin-top: 70px;
     margin-bottom: 200px;
 }
@@ -70,7 +70,7 @@ section {
     font-size: 0;
 }
 
-.main__block {
+.main__ideas-block {
     width: 400px;
     display: inline-block;
     vertical-align: top;
@@ -127,7 +127,7 @@ article {
 }
 
 .article__title {
-    font-size: 21.5px;
+    font-size: 33.5px;
 }
 
 .article__content {
