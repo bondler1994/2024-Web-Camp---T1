@@ -39,8 +39,7 @@
     
     <main>
       <!-- 用float -->
-      <section>
-        <img src="./img/box.png" alt="boxImg">
+      <section class="title-area">
         <div class="main_title">
           <h2>IDEAS?</h2>
           <h3>This is just a place holder.</h3>
@@ -49,10 +48,19 @@
             template, you're free to use this website template without
             linking back to us.
           </p>
+          <div class="btn_item">
+            <button class="btn">TRY IT NOW!</button>
+            <p>Don't worry it's for free</p>
+          </div>
         </div>
+        <div class="section_img">
+          <img src="./img/box.png" alt="boxImg">
+        </div>
+        <!-- 要注意clearfix此div放置位置 -->
+        <div class="clearfix"></div>
       </section>
 
-      <section>
+      <section class="content_container">
         <h3 class="article_title">This is just a place holder.</h3>
         <div class="article_content">
           <p>
@@ -90,7 +98,7 @@
     </main>
 
     <footer>
-      <div class="copyright">&copy; 2023 Zerotype.All Right Reserved.</div>
+      <p class="copyright">&copy; 2023 Zerotype.All Right Reserved.</p>
       <ul class="social_media">
         <li class="social_media_item">
           <a href="##" class="social_media_link"><i class="fa-brands fa-square-facebook"></i></a>

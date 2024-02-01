@@ -14,6 +14,7 @@ h3,
 h4,
 p {
   margin: 0;
+  font-weight: 400;
 }
 
 a {
@@ -25,12 +26,11 @@ a {
 header{
   background-color: #EDEDED;
   font-size: 0; /*處理header區inline-block縫隙*/
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 50px 0;
 }
-.header-container{
-  width: 920px; /*因為是block所以滿版,設定寬度才能看到*/
-  margin: 0 auto;
-  outline:1px solid #000;
-}
+
 
 .logo {
   outline:1px solid #faa;
@@ -39,15 +39,15 @@ header{
   vertical-align: middle;
 }
 
-/* .logo_link{
-
+.logo_link{
+  display: inline-block; /*整個.logo都能點到連結*/
+}
+.logo_pic{
+  outline:1px solid blue;
 }
 
-.logo_pic{
-
-} */
-
 .logo_name{
+  outline:1px solid blue;
   font-size: 16px;
   color: #000 ;
   font-weight: 400;
@@ -57,7 +57,7 @@ header{
   outline:1px solid #aaf;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 70px;
 }
 /*ul*/
 .menu_list{
@@ -86,3 +86,120 @@ header{
 }
 
 /*main*/
+/*第一個section*/
+.title-area{
+  outline: 1px solid #888;
+  width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 70px 0 100px;
+}
+
+.section_img{
+  float: right;
+  outline:1px solid red;
+  width: 50%;
+  text-align: center;
+  
+}
+.section_img > img{
+  max-width: 100%;
+  object-fit:cover;
+  vertical-align: middle; /*消除圖片下方空隙*/
+}
+
+.main_title{
+  outline:1px solid #aaf;
+  display: inline-block;
+  width: 50%;
+  padding: 0 8px 0 0;
+}
+
+.main_title > h2{
+  font-size: 70px;
+}
+.main_title > h3{
+  font-size: 28px;
+  margin: 0 0 5px 0;
+}
+.main_title > p{
+  color: #6c6c6c;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+.clearfix{
+  clear:right;
+}
+.btn_item{
+  outline: 1px solid blue;
+  text-align: center;
+}
+.btn{
+  color: #fff;
+  font-size: 20px;
+  background:linear-gradient(to bottom,#ffbb51  50%, #F99403 50%);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn_item > p{
+  font-size: 12px;
+  text-align: left;
+  padding: 0 0 0 100px;
+}
+
+
+
+/*第二個section*/
+.content_container{
+  width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  outline: 1px solid blue;
+}
+
+.article_content{
+  column-count: 2;
+  column-gap: 40px;
+}
+.article_title{
+  font-size: 28px;
+  column-span: all;
+  margin: 0 0 30px 0;
+}
+.article_content p{
+  break-inside: avoid;
+  color: #575757;
+  margin:0 0 30px 0 ;
+  line-height: 1.4;
+}
+/*footer*/
+footer{
+  background: #efefef;
+  padding: 30px 50px;
+}
+.copyright{
+  display: inline-block;
+  vertical-align: middle;
+}
+.social_media{
+  outline: 1px solid #F99403;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  vertical-align: middle;
+}
+.social_media_item{
+  display: inline-block;
+}
+.social_media_item + .social_media_item{
+  margin: 0 0 0 10px;
+}
+.social_media_link{
+  font-size: 30px;
+  color: #000;
+}
