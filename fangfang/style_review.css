@@ -83,17 +83,14 @@ main{
   margin: 0 auto 100px;
   padding: 0 40px 0 50px;
 }
-
-.section_imgbox{
-  float: right;
-  width: 50%;
-  text-align: right;
-  
+.img_float{
+  float:right;
 }
+
+
 .section_imgbox > img{
   width: 360px;
   height: 340px;
-  /* width: 100%; */
   object-fit: contain;
   text-align: right;
   vertical-align: middle;
