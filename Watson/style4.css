@@ -1,0 +1,196 @@
+/* head */
+
+
+header,
+footer {
+    background-color: #eeefef;
+}
+
+.head_container,
+.main_container,
+.footer_container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header h1 {
+    vertical-align: middle;
+    display: inline-block;
+    width: 80px;
+    font-size: 0;
+    text-align: center;
+    margin: 0 45px 0 40px;
+}
+
+h1 p {
+    font-size: 15px;
+}
+
+nav,
+nav ul,
+nav li,
+nav a {
+    font-size: 0;
+    display: inline-block;
+}
+
+nav a {
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #727272;
+}
+
+nav li+li {
+    margin-left: 70px;
+}
+
+.head_container {
+    padding: 30px 0;
+}
+
+nav .active,
+nav li a:hover {
+    color: orange;
+}
+
+
+/* main */
+
+.main_container {
+    padding-top: 80px;
+}
+
+.main_intro {
+    vertical-align: top;
+    width: 350px;
+}
+
+.main_intro,
+.main_pic,
+.main_container a {
+    display: inline-block;
+}
+
+.main_pic {
+    margin: 0 0 200px 70px;
+    width: 375px;
+    height: 375px;
+}
+
+article img {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+
+.main_container {
+    text-align: center;
+}
+
+.main_container h2,
+.main_container h3,
+.main_container p {
+    text-align: left;
+}
+
+.main_container h2 {
+    font-size: 60px;
+}
+
+.main_container h3 {
+    font-size: 30px;
+}
+
+.main_container p {
+    font-size: 16px;
+}
+
+.main_container a {
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin: 25px 0 5px 0;
+    background-image: linear-gradient(#ffba54 50%, #f99303 50%);
+}
+
+.main_intro_paragraph p {
+    font-size: 12px;
+    padding-left: 65px;
+}
+
+/* article */
+
+article h4 {
+    margin: ;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 30px;
+}
+
+
+
+.main_page {
+    font-size: 0;
+    padding-bottom: 200px;
+}
+
+.main_page p {
+    margin: 20px 35px;
+    display: inline-block;
+    width: 381px;
+}
+
+/* footer 使用position */
+
+.footer_community--active,
+h5,
+footer ul,
+footer li,
+footer a {
+    display: inline-block;
+}
+
+.footer_container,
+.footer_community--active,
+footer footer ul,
+footer li,
+footer a {
+    font-size: 0;
+}
+
+h5 {
+    vertical-align: middle;
+    bottom: -10px;
+    position: relative;
+    right: 250px;
+    font-size: 12px;
+}
+
+footer i {
+    font-size: 35px;
+}
+
+footer i:hover {
+    color: #f99303;
+}
+
+footer li~li {
+    margin-left: 20px;
+}
+
+.footer_community--active {
+    vertical-align: middle;
+    position: relative;
+    left: 240px;
+    bottom: -10px;
+}
+
+.footer_container {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
