@@ -16,14 +16,19 @@ footer {
 header h1 {
     vertical-align: middle;
     display: inline-block;
-    width: 80px;
     font-size: 0;
     text-align: center;
     margin: 0 45px 0 40px;
 }
 
+
+
 h1 p {
     font-size: 15px;
+}
+
+h1 a {
+    display: inline-block;
 }
 
 nav,
@@ -33,6 +38,8 @@ nav a {
     font-size: 0;
     display: inline-block;
 }
+
+
 
 nav a {
     text-transform: capitalize;
@@ -116,6 +123,11 @@ article img {
     margin: 25px 0 5px 0;
     background-image: linear-gradient(#ffba54 50%, #f99303 50%);
 }
+
+.main_container a:hover {
+    background-image: linear-gradient(#ffd28f 50%, #ffaf3f 50%);
+}
+
 
 .main_intro_paragraph p {
     font-size: 12px;

@@ -6,8 +6,9 @@
 }
 
 body {
+    min-width: 1000px;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 h1,
@@ -29,3 +30,25 @@ li {
 img {
     object-fit: fill;
 }
+
+
+
+/* 
+@media(max-width: 1000px) {
+
+    body {
+        width: 100%;
+    }
+
+    * {
+        outline: 0px;
+    }
+
+} */
+
+
+
+/* 建立全域變數
+:root {
+	--green: rgb(0, 155, 95);
+} */
