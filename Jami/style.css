@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-size: 16px;
+}
+header,footer{
+    background-color:#efefef;
+    height:160px;
+}
+.logo{
+    float: left;   
+
+}
+.logo img{
+    width: 65px;
+    position: relative;
+    top:30px;
+    left: 235px;
+}
+.logo h1{
+    position: absolute;
+    top: 115px;
+    left: 230px;
+    font-size: 0.8rem;
+}
+nav ul{
+    margin: 0 250px 0;
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin-left:120px;
+    line-height: 160px;
+    color: #7c7c7c;
+}
+nav ul li:hover{
+    color:#f99300;
+    cursor: pointer;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.2rem;
+    
+}
+h2,h3{
+    font-weight: 400;
+}
+main{
+    width: 900px;
+    margin: 80px auto;
+}
+.main-col{
+    float: left;
+    width:50%;
+}
+.main-container-img{
+    text-align: center;
+}
+.main-container-text-button button{
+    display: inline-block;
+    background-color:pink;
+    border: 0;
+    height: 62px;
+    width: 260px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.4rem;
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
+    transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
+}
+.main-container-text{
+    position: relative;
+}
+  
