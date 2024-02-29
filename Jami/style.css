@@ -1,76 +1,113 @@
 *{
     margin: 0;
     font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 header,footer{
     background-color:#efefef;
-    height:160px;
+    height:10rem;
 }
-.logo{
-    float: left;   
-
-}
-.logo img{
-    width: 65px;
+header .logo img{
     position: relative;
+    width: 65px;
     top:30px;
     left: 235px;
 }
+.logo{
+    float: left;
+}
 .logo h1{
-    position: absolute;
-    top: 115px;
-    left: 230px;
+    position: relative;
     font-size: 0.8rem;
+    top: 10px;
+    left: 230px;
+}
+nav{
+    width: 900px;
+    margin: 0 auto;
 }
 nav ul{
-    margin: 0 250px 0;
+    padding: 0;
 }
 nav ul li{
     display: inline-block;
-    text-align: center;
-    margin-left:120px;
     line-height: 160px;
-    color: #7c7c7c;
+    width: 18%;
 }
-nav ul li:hover{
+nav ul li a{
+    color: #7c7c7c;
+    text-decoration: none;
+}
+nav ul li a:hover{
     color:#f99300;
-    cursor: pointer;
+
 }
 h2{
     font-size: 3rem;
 }
 h3{
-    font-size: 1.2rem;
-    
+    font-size: 1.5rem;    
 }
-h2,h3{
+h2,h3,h4,h5,th{
     font-weight: 400;
+}
+h5{
+    font-size: 0.8rem;
+    color: #7c7c7c;
+
+}
+h4,th{
+    line-height: 1.5rem;
+    text-align: left;
+    color: #7c7c7c;
 }
 main{
     width: 900px;
     margin: 80px auto;
 }
 .main-col{
-    float: left;
     width:50%;
 }
-.main-container-img{
-    text-align: center;
-}
-.main-container-text-button button{
+.main-container-top-text div button{
     display: inline-block;
-    background-color:pink;
+    background: linear-gradient(#ffb84c 50%,#f99400 50%);
+    opacity: 0.9;
     border: 0;
     height: 62px;
-    width: 260px;
+    width: 240px;
     border-radius: 5px;
     color: white;
     font-size: 1.4rem;
+    cursor: pointer;
+}
+.main-container-top-text{
+    position: relative;
+}
+.main-container-top-text div{
+    padding: 20px;
     position: absolute; /* 绝对定位 */
     left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
     transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
 }
-.main-container-text{
-    position: relative;
+.main-container-bottom-table{
+    padding-top: 20px;
 }
-  
+footer{
+    width:100%;
+    margin: 0 auto;
+}
+footer div{
+    position: relative;
+    line-height: 160px;
+}
+footer div i{
+    letter-spacing: 10px;
+
+}
+.float{
+    float: left;
+    width: 50%;
+}
+.text-center{
+    text-align: center;
+}
