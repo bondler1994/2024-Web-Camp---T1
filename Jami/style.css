@@ -2,45 +2,35 @@
     margin: 0;
     font-size: 16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-header,footer{
-    background-color:#efefef;
-    height:10rem;
-}
-header .logo img{
-    position: relative;
-    width: 65px;
-    top:30px;
-    left: 235px;
-}
-.logo{
-    float: left;
-}
-.logo h1{
-    position: relative;
-    font-size: 0.8rem;
-    top: 10px;
-    left: 230px;
-}
-nav{
-    width: 900px;
-    margin: 0 auto;
-}
-nav ul{
-    padding: 0;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 160px;
-    width: 18%;
-}
-nav ul li a{
     color: #7c7c7c;
+    font-weight: 400;
+}
+#important{
+    color: black;
+    font-weight: 500;
+}
+a{
     text-decoration: none;
 }
-nav ul li a:hover{
+a:hover{
     color:#f99300;
-
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.float{
+    float: left;
+    width: 50%;
+}
+.vert{
+    line-height: 10rem;
+}
+.clearfix{
+    clear: both;
+    height: 450px;
 }
 h2{
     font-size: 3rem;
@@ -48,27 +38,52 @@ h2{
 h3{
     font-size: 1.5rem;    
 }
-h2,h3,h4,h5,th{
-    font-weight: 400;
+h4{
+    line-height: 1.5rem;
+    padding-top: 10px;
 }
 h5{
     font-size: 0.8rem;
-    color: #7c7c7c;
-
 }
-h4,th{
-    line-height: 1.5rem;
-    text-align: left;
-    color: #7c7c7c;
+header,footer{
+    background-color:#efefef;
+    height: 10rem;
+}
+.logo{
+    position: absolute;
+    top: 2.5em;
+    left: calc((100% - 900px)/2 - 50px);
+    width: 100px;
+}
+.logo h1{
+    font-size: 0.8rem;
+    margin: -13px 0 0 0;
+}
+header nav{
+    width: 900px;
+    margin: 0 auto;
+}
+header nav ul{
+    padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+    width: 180px;
 }
 main{
     width: 900px;
     margin: 80px auto;
 }
-.main-col{
-    width:50%;
+.main-article-description{
+    position: relative;
 }
-.main-container-top-text div button{
+.main-article-description div{
+    padding: 20px;
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
+    transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
+}
+.main-article-description-button button{
     display: inline-block;
     background: linear-gradient(#ffb84c 50%,#f99400 50%);
     opacity: 0.9;
@@ -80,34 +95,23 @@ main{
     font-size: 1.4rem;
     cursor: pointer;
 }
-.main-container-top-text{
-    position: relative;
+.main-article-description-button h5{
+    padding-top: 5px;
 }
-.main-container-top-text div{
-    padding: 20px;
-    position: absolute; /* 绝对定位 */
-    left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
-    transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
-}
-.main-container-bottom-table{
+
+.main-article-paragraph table{
     padding-top: 20px;
 }
 footer{
     width:100%;
     margin: 0 auto;
 }
-footer div{
-    position: relative;
-    line-height: 160px;
+footer h5{
+    display: inline-block;
 }
 footer div i{
     letter-spacing: 10px;
-
 }
-.float{
-    float: left;
-    width: 50%;
-}
-.text-center{
-    text-align: center;
+.icon:active i{
+    color:#4b4b4b;
 }
