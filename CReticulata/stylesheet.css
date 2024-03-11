@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 body {
   margin: 0;
@@ -14,22 +14,22 @@ nav {
 div.logo {
   display: inline-block;
   width: 100px;
-  height: 100px;
   vertical-align: middle;
+  text-align: center;
+  font-size: 0;
   /* float: left; */
 }
 
 div.logo img {
-  float: left;
-  margin: 0 20px;
+  /* float: left; */
+  margin: 0;
 }
 
 div.logo p {
   margin: 0;
-  float: left;
-  width: 100px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 900;
 }
 
