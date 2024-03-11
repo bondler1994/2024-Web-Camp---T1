@@ -21,6 +21,7 @@ nav {
 
 a.logo {
   display: inline-block;
+  width: 100px;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
@@ -35,6 +36,7 @@ a.logo p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 900;
+  width: 100px;
 }
 
 ul {
@@ -65,10 +67,66 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section#brief_introduction {
+#brief_introduction {
   margin: 50px 20%;
+  font-size: 0;
 }
 
-div.text_introduction {
-  width: 30%;
+#brief_introduction div.left_content {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+div.left_content h1,
+h3,
+p {
+  margin: 0;
+}
+
+div.left_content h1 {
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+div.left_content h3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+div.left_content p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+div.button {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+div.button button {
+  display: inline-block;
+  padding: 12px 30px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    #ffba50 0%,
+    #ffba50 50%,
+    #f99400 50%,
+    #f99400 100%
+  );
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+div.button p {
+  font-size: 10px;
+  width: 100px;
+}
+
+section#brief_introduction img {
+  display: inline-block;
+  width: 50%;
 }
