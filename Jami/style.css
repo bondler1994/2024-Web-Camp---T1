@@ -4,6 +4,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #7c7c7c;
     font-weight: 400;
+    outline: 1px solid black;
 }
 #important{
     color: black;
