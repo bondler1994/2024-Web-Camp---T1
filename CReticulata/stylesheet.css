@@ -146,23 +146,24 @@ section#brief_introduction img {
 #introduction .left_content,
 #introduction .right_content {
   display: inline-block;
-  width: 46%;
+  width: 46.5%;
   font-size: 13px;
-  margin-right: 4%;
+  margin-right: 3.5%;
   line-height: 1.6;
 }
 
 /* footer */
 footer {
   background-color: #efefef;
-  height: 75px;
 }
 
 footer nav {
   width: 780px;
   margin: 0 auto;
   padding-top: 50px;
+  padding-bottom: 10px;
   font-size: 0;
+  overflow: hidden;
 }
 
 footer p {
@@ -170,20 +171,35 @@ footer p {
   font-size: 10px;
   display: inline-block;
   vertical-align: middle;
+  width: 50%;
 }
 
 footer nav ul {
   display: inline-block;
   margin: 0;
   padding: 0;
-  float: right;
+  /* float: right; */
+  width: 50%;
   vertical-align: middle;
+  text-align: right;
 }
 footer nav li {
   list-style-type: none;
   display: inline-block;
+  margin-left: 15px;
 }
 footer nav li i {
   font-size: 24px;
   color: black;
+}
+
+/* for sticky footer */
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+  padding-bottom: 1px;
 }
