@@ -1,113 +1,125 @@
 *{
     margin: 0;
-    font-size: 16px;
+    outline: 0.8px solid red;
+    font-weight: 400;
+}
+body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #7c7c7c;
-    font-weight: 400;
-    outline: 1px solid black;
 }
-#important{
-    color: black;
-    font-weight: 500;
+header{
+    white-space: nowrap; 
+    background-color:#efefef;  
+    font-size: 0;
 }
-a{
-    text-decoration: none;
+.container{
+    width: 1000px;
+    margin:0 auto;
 }
-.hoverColor:hover{
-    color:#f99300;
-}
-.text-center{
+.container h1{
+    display: inline-block;
     text-align: center;
 }
-.text-left{
-    text-align: left;
-}
-.float{
-    float: left;
-    width: 50%;
-}
-.vert{
-    line-height: 10rem;
-}
-.clearfix{
-    clear: both;
-    height: 450px;
-}
-h2{
-    font-size: 3rem;
-}
-h3{
-    font-size: 1.5rem;    
-}
-h4{
-    line-height: 1.5rem;
-    padding-top: 10px;
-}
-h5{
-    font-size: 0.8rem;
-}
-header,footer{
-    background-color:#efefef;
-    height: 10rem;
-}
 .logo{
-    position: absolute;
-    top: 2.5em;
-    left: calc((100% - 900px)/2 - 50px);
-    width: 100px;
+    display: inline-block;
+    margin: 30px 0 50px 0;
+    vertical-align: middle;
+    /* 下了之後是別人的baseline會跟他的middle對齊 */
 }
-.logo h1{
-    font-size: 0.8rem;
-    margin: -13px 0 0 0;
+.logo img{
+    width: 60px;
 }
-header nav{
-    width: 900px;
-    margin: 0 auto;
+.logo p{
+    font-size: 1.1rem;
 }
-header nav ul{
+.container a:visited{
+    color: black;
+}
+header div nav{
+    display: inline-block;
+}
+header div nav ul{
     padding: 0;
 }
 header nav ul li{
     display: inline-block;
-    width: 180px;
+    font-size: 1.1rem;
+    padding: 20px 0 20px 112px;
 }
-main{
-    width: 900px;
-    margin: 80px auto;
+header nav ul li a{
+    padding: 20px 0;
 }
-.main-article-description{
-    position: relative;
+a{
+    text-decoration: none;
 }
-.main-article-description div{
-    padding: 20px;
-    position: absolute; /* 绝对定位 */
-    left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
-    transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
+.container a:visited{
+    color: #7c7c7c;
 }
-.main-article-description-button button{
+a.hoverColor:hover{
+    color:#f99300;
+}
+.main_ideas{
     display: inline-block;
+    width: 45%;
+    margin: 76px 0 160px 40px;
+}
+
+/* .clearfix{
+    clear: both;
+    height: 450px;
+} */
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 2rem;    
+}
+.main_tryit{
+    margin: 40px auto;
+    width: 50%;
+}
+.main_tryit a{
     background: linear-gradient(#ffb84c 50%,#f99400 50%);
     opacity: 0.9;
     border: 0;
-    height: 62px;
-    width: 240px;
+    padding: 25px 0;
     border-radius: 5px;
+    width: 100%;
     color: white;
     font-size: 1.4rem;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
 }
-.main-article-description-button h5{
-    padding-top: 5px;
+.main_tryit span{
+    display: inline-block;
 }
-
-.main-article-paragraph table{
-    padding-top: 20px;
+.main_img{
+    float: right;
+    margin: 76px 0 0 0;
+    font-size: 0;
 }
-footer{
-    width:100%;
-    margin: 0 auto;
+.main_img img{
+    width:422px;
 }
-footer h5{
+article table p{
+    text-align: left;
+    padding: 20px 0;
+}
+article h3{
+    margin: 65px 0 40px 0;
+}
+article{
+    padding: 0 0 246px 0;
+}
+footer div{
+    padding: 50px 0 25px 0;
+}
+footer div h5{
+    display: inline-block;
+    margin-right: 520px;
+}
+footer .icon{
     display: inline-block;
 }
 footer div i{
@@ -116,3 +128,11 @@ footer div i{
 .icon:active i{
     color:#4b4b4b;
 }
+footer{
+    background-color:#efefef;  
+}
+
+article p{
+ display: inline-block;   
+}
+
