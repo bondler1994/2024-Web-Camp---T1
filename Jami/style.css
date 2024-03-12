@@ -1,85 +1,109 @@
-*{
+* {
     margin: 0;
-    outline: 0.8px solid red;
     font-weight: 400;
+    outline: 0.8px solid red;
 }
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+body {
     color: #7c7c7c;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-header{
-    white-space: nowrap; 
-    background-color:#efefef;  
+/* header */
+header {
+    background-color: #efefef;
     font-size: 0;
 }
-.container{
+
+.container {
     width: 1000px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.container h1{
+
+header h1 {
+    display: inline-block;
+    margin: 28px 0 50px 0;
+    vertical-align: middle;
+    /* 使元素的中間部位與父元素的基準線加上父元素 x-height 的一半對齊。 */
+}
+.logo {
     display: inline-block;
     text-align: center;
 }
-.logo{
-    display: inline-block;
-    margin: 30px 0 50px 0;
-    vertical-align: middle;
-    /* 下了之後是別人的baseline會跟他的middle對齊 */
-}
-.logo img{
+
+.logo img {
     width: 60px;
 }
-.logo p{
+
+.logo p {
     font-size: 1.1rem;
-}
-.container a:visited{
     color: black;
 }
-header div nav{
+
+header div nav {
     display: inline-block;
-}
-header div nav ul{
-    padding: 0;
-}
-header nav ul li{
-    display: inline-block;
-    font-size: 1.1rem;
-    padding: 20px 0 20px 112px;
-}
-header nav ul li a{
-    padding: 20px 0;
-}
-a{
-    text-decoration: none;
-}
-.container a:visited{
-    color: #7c7c7c;
-}
-a.hoverColor:hover{
-    color:#f99300;
-}
-.main_ideas{
-    display: inline-block;
-    width: 45%;
-    margin: 76px 0 160px 40px;
+    vertical-align: middle;
 }
 
-/* .clearfix{
-    clear: both;
-    height: 450px;
-} */
-h2{
+.nav_bar {
+    padding: 0;
+}
+
+.nav_bar li {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0px 0 0px 112px;
+}
+
+header nav ul li a {
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7c7c7c;
+
+}
+
+.hoverColor:hover {
+    color: #f99300;
+}
+/* main */
+main > div {
+    background-color: #fdfdfd;
+
+}
+/* main - section */
+.main_ideas {
+    display: inline-block;
+    width: 45%;
+    margin: 76px 0 160px 50px;
+}
+
+.main_ideas h2 {
     font-size: 5rem;
+    color: black;
+
 }
-h3{
-    font-size: 2rem;    
+
+h3 {
+    font-size: 2rem;
+    color: black;
+
 }
-.main_tryit{
+
+.main_tryit {
     margin: 40px auto;
     width: 50%;
+    font-size: 0;
 }
-.main_tryit a{
-    background: linear-gradient(#ffb84c 50%,#f99400 50%);
+
+.main_tryit a {
+    background: linear-gradient(#ffb84c 50%, #f99400 50%);
     opacity: 0.9;
     border: 0;
     padding: 25px 0;
@@ -91,48 +115,76 @@ h3{
     display: inline-block;
     text-align: center;
 }
-.main_tryit span{
+
+.main_tryit span {
     display: inline-block;
+    font-size: 1rem;
 }
-.main_img{
+
+.main_img {
     float: right;
     margin: 76px 0 0 0;
     font-size: 0;
 }
-.main_img img{
-    width:422px;
-}
-article table p{
-    text-align: left;
-    padding: 20px 0;
-}
-article h3{
-    margin: 65px 0 40px 0;
-}
-article{
-    padding: 0 0 246px 0;
-}
-footer div{
-    padding: 50px 0 25px 0;
-}
-footer div h5{
-    display: inline-block;
-    margin-right: 520px;
-}
-footer .icon{
-    display: inline-block;
-}
-footer div i{
-    letter-spacing: 10px;
-}
-.icon:active i{
-    color:#4b4b4b;
-}
-footer{
-    background-color:#efefef;  
+
+.main_img img {
+    width: 422px;
 }
 
-article p{
- display: inline-block;   
+/* main - article */
+article.container{
+    font-size: 0;
+    margin-bottom: 238px;
+
+}
+
+article h3 {
+    margin: 65px 0 40px 0;
+}
+
+article div p {
+    display: inline-block;
+    width: calc(50% - 35px);
+    padding: 0 0 50px 0;
+    font-size: 16px;
+}
+
+.article_indent{
+    padding: 0 0 0px 35px;
+
+}
+/* footer */
+footer {
+    background-color: #efefef;
+
+}
+
+footer > div {
+    padding: 50px 0 25px 0;
+    font-size: 0;
+
+}
+
+footer div span {
+    display: inline-block;
+    width: 50%;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+footer div.icon {
+    display: inline-block;
+    font-size: 0;
+    width: 50%;
+    text-align: end;
+    vertical-align: middle;
+    /* 使元素和其後代元素的頂部以line box的middle對齊 */
+}
+
+footer div.icon i {
+    padding-left: 15px;
+    font-size: 2.4rem;
+    color: black;
+
 }
 
