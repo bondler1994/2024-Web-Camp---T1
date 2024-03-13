@@ -56,11 +56,8 @@ header div nav {
     padding: 0px 0 0px 112px;
 }
 
-header nav ul li a {
+.nav_bar li a{
     padding: 20px 0;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -68,10 +65,12 @@ a:visited {
     color: #7c7c7c;
 
 }
-
-.hoverColor:hover {
+.hoverColor:hover{
     color: #f99300;
+
 }
+
+
 /* main */
 main > div {
     background-color: #fdfdfd;
@@ -90,7 +89,7 @@ main > div {
 
 }
 
-h3 {
+main h3 {
     font-size: 2rem;
     color: black;
 
@@ -108,16 +107,15 @@ h3 {
     border: 0;
     padding: 25px 0;
     border-radius: 5px;
-    width: 100%;
     color: white;
     font-size: 1.4rem;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     text-align: center;
 }
 
 .main_tryit span {
-    display: inline-block;
+    display: block;
     font-size: 1rem;
 }
 
@@ -165,26 +163,29 @@ footer > div {
 
 }
 
-footer div span {
+/* .footer_box這個有需要共用嗎？ */
+.footer_box{
     display: inline-block;
     width: 50%;
+
+}
+footer div span {
     font-size: 1rem;
     vertical-align: middle;
+    /* 使元素的中間部位與父元素的基準線加上父元素 x-height 的一半對齊。 */
+
 }
 
-footer div.icon {
-    display: inline-block;
+.icon {
     font-size: 0;
-    width: 50%;
     text-align: end;
     vertical-align: middle;
-    /* 使元素和其後代元素的頂部以line box的middle對齊 */
+    /* 使元素的中間部位與父元素的基準線加上父元素 x-height 的一半對齊。 */
+
 }
 
-footer div.icon i {
+.icon i {
     padding-left: 15px;
     font-size: 2.4rem;
     color: black;
-
 }
-
