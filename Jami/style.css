@@ -44,7 +44,9 @@ a {
 }
 
 .logo img {
-    height: 90px;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .logo span {
@@ -53,6 +55,7 @@ a {
 }
 
 .logo a {
+    width: 100px;
     color: black;
 }
 
