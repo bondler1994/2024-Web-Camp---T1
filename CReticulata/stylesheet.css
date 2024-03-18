@@ -21,6 +21,8 @@ header nav {
 header h1 {
   display: inline-block;
   width: 78px;
+  margin-right: 25px;
+  margin-left: 29.22px;
   vertical-align: middle;
   text-align: center;
 }
@@ -48,21 +50,24 @@ header .logo p {
 header ul {
   display: inline-block;
   margin: 0;
+  padding: 0;
   vertical-align: middle;
   font-size: 16px;
 }
 
-header nav li {
+header ul li {
   list-style-type: none;
   float: left;
 }
-header nav li a.highlight {
+
+header ul a:hover {
   color: #f4be69;
 }
 
-header nav li a {
+header ul a {
   display: inline-block;
-  padding: 10px 40px;
+  margin: 0px 45px;
+  padding: 10px 10px;
   color: #a2a2a2;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -163,8 +168,8 @@ footer {
   background-color: #efefef;
 }
 
-footer nav {
-  width: 780px;
+footer .container {
+  width: 886px;
   margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 17px;
@@ -173,27 +178,32 @@ footer nav {
 
 footer p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 12.5px;
   display: inline-block;
   vertical-align: middle;
   width: 50%;
 }
 
-footer nav ul {
+footer ul {
   display: inline-block;
   margin: 0;
   padding: 0;
-  /* float: right; */
   width: 50%;
   vertical-align: middle;
   text-align: right;
 }
-footer nav li {
+
+footer li {
   list-style-type: none;
   display: inline-block;
   margin-left: 22px;
 }
-footer nav li i {
+
+footer a {
+  display: inline-block;
+}
+
+footer i {
   font-size: 30px;
   color: black;
 }
