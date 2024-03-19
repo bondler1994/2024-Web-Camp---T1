@@ -16,6 +16,10 @@ p {
     margin: 0;
 }
 
+:root{
+    --textColor:#7c7c7c;
+}
+
 /* header */
 header {
     background-color: #efefef;
@@ -73,7 +77,7 @@ a {
 
 .navbar a {
     padding: 20px 15px;
-    color: #7c7c7c;
+    color: var(--textColor);
 }
 
 .hoverColor:hover {
@@ -108,7 +112,7 @@ main {
 }
 
 .section_topic p {
-    color: #7c7c7c;
+    color: var(--textColor);
     font-size: 18px;
 }
 
@@ -135,7 +139,7 @@ main {
 
 .section_link span {
     font-size: 16px;
-    color: #7c7c7c;
+    color: var(--textColor);
 }
 
 .section_img {
@@ -176,7 +180,7 @@ article h3 {
     column-count: 2;
     column-gap: 40px;
     font-size: 18px;
-    color: #7c7c7c;
+    color: var(--textColor);
 }
 
 .article_column p:not(:nth-child(3), :nth-last-child(1)) {
@@ -200,7 +204,7 @@ footer {
 .copyright {
     font-size: 16px;
     vertical-align: middle;
-    color: #7c7c7c;
+    color: var(--textColor);
 }
 
 .socialmedia {
