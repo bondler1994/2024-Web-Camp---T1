@@ -77,48 +77,57 @@ header ul a {
 main {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* section#brief_introduction */
-#brief_introduction {
-  margin: 50px 20%;
+/* section.brief_introduction */
+.brief_introduction {
+  margin: 0 auto;
+  padding: 64px 0;
   font-size: 0;
+  width: 814px;
 }
 
-#brief_introduction .left_content {
+.brief_introduction::after {
+  display: block;
+  content: "";
+  clear: right;
+}
+
+.brief_introduction .content {
   display: inline-block;
-  vertical-align: top;
-  width: 50%;
+  width: 372px;
 }
 
-#brief_introduction .left_content h1,
-h3,
+.brief_introduction h1,
+h2,
 p {
   margin: 0;
 }
 
-#brief_introduction .left_content h1 {
-  font-size: 50px;
+.brief_introduction h1 {
+  font-size: 56px;
   font-weight: 100;
-  line-height: 50px;
+  line-height: 1;
 }
 
-#brief_introduction .left_content h3 {
-  font-size: 24px;
+.brief_introduction h2 {
+  font-size: 32px;
   font-weight: 100;
 }
 
-#brief_introduction .left_content p {
-  font-size: 13px;
+.content > p {
+  font-size: 17px;
   line-height: 1.6;
 }
 
-#brief_introduction .button {
-  width: fit-content;
-  margin: 20px auto;
+.brief_introduction .button {
+  width: 235px;
+  margin: 25px auto;
 }
 
-#brief_introduction .button button {
+.brief_introduction .button a {
+  text-decoration: none;
   display: inline-block;
-  padding: 12px 30px;
+  line-height: 62px;
+  text-align: center;
   color: white;
   background: linear-gradient(
     to bottom,
@@ -128,34 +137,37 @@ p {
     #f99400 100%
   );
   border: none;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 4px;
+  width: 235px;
 }
 
-#brief_introduction .button p {
-  font-size: 10px;
+.brief_introduction .button p {
+  font-size: 13px;
+  line-height: 1.6;
 }
 
-section#brief_introduction img {
+.brief_introduction img {
   display: inline-block;
-  width: 50%;
+  width: 372px;
+  float: right;
 }
 
-/* section#introduction */
-#introduction {
+/* section.introduction */
+.introduction {
   margin: 120px 17%;
   font-size: 0;
 }
 
-#introduction h3 {
+.introduction h3 {
   width: 50%;
   margin: 19px 0;
   font-size: 24px;
   font-weight: 100;
 }
 
-#introduction .left_content,
-#introduction .right_content {
+.introduction .left_content,
+.introduction .right_content {
   display: inline-block;
   width: 46.5%;
   font-size: 13px;
