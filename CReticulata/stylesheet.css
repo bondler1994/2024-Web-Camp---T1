@@ -2,18 +2,33 @@
   outline: 1px solid red;
 }
 
+/* font style*/
+.title_style {
+  color: #303030;
+  font-weight: 100;
+}
+
+.paragraph_style {
+  color: #595959;
+  line-height: 1.6;
+}
+
+/* body */
 body {
   margin: 0;
+  min-width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header */
 header {
   background-color: #efefef;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 64px;
 }
 
 header nav {
-  width: fit-content;
+  width: 919px;
   margin: 0 auto;
   padding: 25px 0;
   font-size: 0;
@@ -23,7 +38,6 @@ header h1 {
   display: inline-block;
   width: 78px;
   margin-right: 25px;
-  margin-left: 29.22px;
   vertical-align: middle;
   text-align: center;
 }
@@ -42,7 +56,6 @@ header .logo_img {
 header .logo p {
   margin: 0;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 900;
   width: 78px;
@@ -53,21 +66,21 @@ header ul {
   margin: 0;
   padding: 0;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 0px;
 }
 
 header ul li {
   list-style-type: none;
-  float: left;
+  display: inline-block;
 }
 
 header ul a {
   display: inline-block;
-  margin: 0px 45px;
-  padding: 10px 10px;
+  margin: 0px 35px;
+  padding: 10px 20px;
   color: #a2a2a2;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 header ul a:hover {
@@ -76,14 +89,18 @@ header ul a:hover {
 
 /* main */
 main {
-  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
+
+.main_container {
+  width: 857px;
+  margin: 0 auto;
+}
+
 /* section.brief_introduction */
 .brief_introduction {
-  margin: 0 auto;
-  padding: 64px 0;
+  margin: 0 32px 150px;
   font-size: 0;
-  width: 814px;
 }
 
 .brief_introduction::after {
@@ -94,37 +111,32 @@ main {
 
 .brief_introduction .content {
   display: inline-block;
-  width: 372px;
+  width: 369px;
 }
 
-.brief_introduction h1,
-h2,
+.brief_introduction h2,
+h3,
 p {
   margin: 0;
 }
 
-.brief_introduction h1 {
+.brief_introduction h2 {
   font-size: 56px;
-  font-weight: 100;
   line-height: 1;
-  color: #303030;
 }
 
-.brief_introduction h2 {
+.brief_introduction h3 {
   font-size: 32px;
-  font-weight: 100;
-  color: #303030;
 }
 
 .content > p {
   font-size: 17px;
-  line-height: 1.6;
-  color: #595959;
+  margin-bottom: 21px;
 }
 
 .brief_introduction .button {
-  width: 235px;
-  margin: 21px auto;
+  width: 234px;
+  margin: 0 auto;
 }
 
 .brief_introduction .button a {
@@ -143,13 +155,11 @@ p {
   border: none;
   font-size: 24px;
   border-radius: 4px;
-  width: 235px;
+  width: 234px;
 }
 
 .brief_introduction .button p {
   font-size: 13px;
-  line-height: 1.6;
-  color: #595959;
 }
 
 .brief_introduction img {
@@ -160,18 +170,13 @@ p {
 
 /* section.introduction */
 .introduction {
-  margin: 0px auto;
-  padding-top: 86px;
-  padding-bottom: 182px;
-  width: 857px;
+  margin-bottom: 182px;
 }
 
-.introduction h2 {
+.introduction h3 {
   margin-left: 8px;
   margin-bottom: 28px;
   font-size: 32px;
-  font-weight: 100;
-  color: #404040;
 }
 
 .introduction .content {
@@ -184,8 +189,6 @@ p {
   margin-left: 8px;
   margin-bottom: 28px;
   font-size: 17px;
-  line-height: 1.6;
-  color: #595959;
 }
 
 /* footer */
@@ -203,7 +206,6 @@ footer .container {
 }
 
 footer p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12.5px;
   display: inline-block;
   vertical-align: middle;
@@ -223,6 +225,9 @@ footer ul {
 footer li {
   list-style-type: none;
   display: inline-block;
+}
+
+footer li + li {
   margin-left: 22px;
 }
 
@@ -233,6 +238,10 @@ footer a {
 footer i {
   font-size: 30px;
   color: #0c0c0c;
+}
+
+footer i:hover {
+  color: #f99400;
 }
 
 /* for sticky footer */
