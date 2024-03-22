@@ -183,8 +183,8 @@ article h3 {
     color: var(--textColor);
 }
 
-.article_column p:not(:nth-child(3), :nth-last-child(1)) {
-    margin-bottom: 20px;
+.article_column p:nth-child(even) {
+    margin: 20px 0;
 }
 
 /* footer */
