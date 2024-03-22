@@ -29,7 +29,7 @@ header {
     text-align-last: justify;
 }
 
-.widthSetting {
+.width-setting {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -59,7 +59,7 @@ a {
     display: block;
 }
 
-.navbar_container {
+.navbar-container {
     display: inline-block;
     vertical-align: middle;
     margin-right: 30px;
@@ -80,7 +80,7 @@ a {
     color: var(--textColor);
 }
 
-.hoverColor:hover {
+.hover-color:hover {
     color: #f99300;
 }
 
@@ -90,39 +90,39 @@ main {
     margin-bottom: 225px;
 }
 
-.section_backgroundColor {
+.section-background-color {
     background-color: #fdfdfd;
     padding-top: 80px;
     padding-bottom: 100px;
 }
 
-.section_topic {
+.section-topic {
     display: inline-block;
     width: 45%;
     margin-left: 50px;
 }
 
-.section_topic h2 {
+.section-topic h2 {
     font-size: 80px;
     line-height: 1;
 }
 
-.section_topic h3 {
+.section-topic h3 {
     font-size: 34px;
 }
 
-.section_topic p {
+.section-topic p {
     color: var(--textColor);
     font-size: 18px;
 }
 
 
-.section_link {
+.section-link {
     margin: 35px auto;
     width: 60%;
 }
 
-.section_link a {
+.section-link a {
     background: linear-gradient(#ffb84c 50%, #f99400 50%);
     opacity: 0.9;
     padding: 15px 0;
@@ -133,16 +133,16 @@ main {
     display: block;
 }
 
-.section_link a:hover {
+.section-link a:hover {
     background: linear-gradient(#ffb84c, #f99400);
 }
 
-.section_link span {
+.section-link span {
     font-size: 16px;
     color: var(--textColor);
 }
 
-.section_img {
+.section-img {
     float: right;
     font-size: 0;
     width: 45%;
@@ -155,7 +155,7 @@ section::after {
     clear: right;
 }
 
-.section_img img {
+.section-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -166,7 +166,7 @@ article {
     padding-left: 40px;
 }
 
-article.widthSetting {
+article.width-setting {
     max-width: 960px;
     margin-top: 80px;
 }
@@ -176,14 +176,14 @@ article h3 {
     margin-bottom: 30px;
 }
 
-.article_column {
+.article-column {
     column-count: 2;
     column-gap: 40px;
     font-size: 18px;
     color: var(--textColor);
 }
 
-.article_column p:nth-child(even) {
+.article-column p:nth-child(even) {
     margin: 20px 0;
 }
 
@@ -196,7 +196,7 @@ footer {
 }
 
 .copyright,
-.socialmedia {
+.social-media {
     display: inline-block;
     width: 50%;
 }
@@ -207,17 +207,17 @@ footer {
     color: var(--textColor);
 }
 
-.socialmedia {
+.social-media {
     font-size: 0;
     text-align: end;
     vertical-align: middle;
 }
 
-.socialmedia i {
+.social-media i {
     font-size: 2.4rem;
     color: black;
 }
 
-.socialmedia a:not(:nth-child(1)) {
+.social-media a:not(:nth-child(1)) {
     margin-left: 30px;
 }
