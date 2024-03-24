@@ -1,118 +1,223 @@
-*{
-    margin: 0;
-    font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #7c7c7c;
+* {
+    outline: 1px solid tomato;
     font-weight: 400;
-    outline: 1px solid black;
-}
-#important{
-    color: black;
-    font-weight: 500;
-}
-a{
     text-decoration: none;
 }
-.hoverColor:hover{
-    color:#f99300;
-}
-.text-center{
-    text-align: center;
-}
-.text-left{
-    text-align: left;
-}
-.float{
-    float: left;
-    width: 50%;
-}
-.vert{
-    line-height: 10rem;
-}
-.clearfix{
-    clear: both;
-    height: 450px;
-}
-h2{
-    font-size: 3rem;
-}
-h3{
-    font-size: 1.5rem;    
-}
-h4{
-    line-height: 1.5rem;
-    padding-top: 10px;
-}
-h5{
-    font-size: 0.8rem;
-}
-header,footer{
-    background-color:#efefef;
-    height: 10rem;
-}
-.logo{
-    position: absolute;
-    top: 2.5em;
-    left: calc((100% - 900px)/2 - 50px);
-    width: 100px;
-}
-.logo h1{
-    font-size: 0.8rem;
-    margin: -13px 0 0 0;
-}
-header nav{
-    width: 900px;
-    margin: 0 auto;
-}
-header nav ul{
-    padding: 0;
-}
-header nav ul li{
-    display: inline-block;
-    width: 180px;
-}
-main{
-    width: 900px;
-    margin: 80px auto;
-}
-.main-article-description{
-    position: relative;
-}
-.main-article-description div{
-    padding: 20px;
-    position: absolute; /* 绝对定位 */
-    left: 50%; /* 左边距离父元素左边界的距离为父元素宽度的一半 */
-    transform: translateX(-50%); /* 将按钮向左移动自身宽度的一半 */
-}
-.main-article-description-button button{
-    display: inline-block;
-    background: linear-gradient(#ffb84c 50%,#f99400 50%);
-    opacity: 0.9;
-    border: 0;
-    height: 62px;
-    width: 240px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.main-article-description-button h5{
-    padding-top: 5px;
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-.main-article-paragraph table{
-    padding-top: 20px;
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
-footer{
-    width:100%;
+
+:root{
+    --textColor:#7c7c7c;
+}
+
+/* header */
+header {
+    background-color: #efefef;
+    font-size: 0;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    text-align-last: justify;
+}
+
+.width-setting {
+    max-width: 1000px;
     margin: 0 auto;
 }
-footer h5{
+
+a {
     display: inline-block;
 }
-footer div i{
-    letter-spacing: 10px;
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    text-align-last: center;
 }
-.icon:active i{
-    color:#4b4b4b;
+
+.logo a {
+    width: 100px;
+    color: black;
+}
+
+.logo img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 18px;
+    display: block;
+}
+
+.navbar-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    width: 80%;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navbar a {
+    padding: 20px 15px;
+    color: var(--textColor);
+}
+
+.hover-color:hover {
+    color: #f99300;
+}
+
+
+/* main */
+main {
+    margin-bottom: 225px;
+}
+
+.section-background-color {
+    background-color: #fdfdfd;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.section-topic {
+    display: inline-block;
+    width: 45%;
+    margin-left: 50px;
+}
+
+.section-topic h2 {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.section-topic h3 {
+    font-size: 34px;
+}
+
+.section-topic p {
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+
+.section-link {
+    margin: 35px auto;
+    width: 60%;
+}
+
+.section-link a {
+    background: linear-gradient(#ffb84c 50%, #f99400 50%);
+    opacity: 0.9;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+}
+
+.section-link a:hover {
+    background: linear-gradient(#ffb84c, #f99400);
+}
+
+.section-link span {
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.section-img {
+    float: right;
+    font-size: 0;
+    width: 45%;
+    height: 428px;
+}
+
+section::after {
+    content: "";
+    display: block;
+    clear: right;
+}
+
+.section-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+article {
+    font-size: 0;
+    padding-left: 40px;
+}
+
+article.width-setting {
+    max-width: 960px;
+    margin-top: 80px;
+}
+
+article h3 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.article-column {
+    column-count: 2;
+    column-gap: 40px;
+    font-size: 18px;
+    color: var(--textColor);
+}
+
+.article-column p:nth-child(even) {
+    margin: 20px 0;
+}
+
+/* footer */
+footer {
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-size: 0;
+}
+
+.copyright,
+.social-media {
+    display: inline-block;
+    width: 50%;
+}
+
+.copyright {
+    font-size: 16px;
+    vertical-align: middle;
+    color: var(--textColor);
+}
+
+.social-media {
+    font-size: 0;
+    text-align: end;
+    vertical-align: middle;
+}
+
+.social-media i {
+    font-size: 2.4rem;
+    color: black;
+}
+
+.social-media a:not(:nth-child(1)) {
+    margin-left: 30px;
 }
