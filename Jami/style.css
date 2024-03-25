@@ -3,7 +3,9 @@
     font-weight: 400;
     text-decoration: none;
 }
-
+html{
+    min-width: 1000px;
+}
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
