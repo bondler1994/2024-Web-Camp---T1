@@ -185,8 +185,12 @@ article h3 {
     color: var(--textColor);
 }
 
-.article-column p:nth-child(even) {
+.article-column p{
     margin: 20px 0;
+}
+
+.article-column p:first-child{
+    margin-top: 0;
 }
 
 /* footer */
