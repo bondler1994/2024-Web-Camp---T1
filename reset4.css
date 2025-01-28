@@ -1,14 +1,14 @@
 /* reset */
 
 * {
-    outline: 1px solid red;
-    font-family: "Open Sans", sans-serif;
+  /* outline: 1px solid red; */
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    min-width: 1000px;
-    margin: 0;
-    /* padding: 0; */
+  min-width: 1000px;
+  margin: 0;
+  /* padding: 0; */
 }
 
 h1,
@@ -20,18 +20,16 @@ p,
 a,
 ul,
 li {
-    color: #000;
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    object-fit: fill;
+  object-fit: fill;
 }
-
-
 
 /* 
 @media(max-width: 1000px) {
@@ -45,8 +43,6 @@ img {
     }
 
 } */
-
-
 
 /* 建立全域變數
 :root {
